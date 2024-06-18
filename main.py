@@ -2,7 +2,6 @@ import streamlit as st
 import cv2
 import numpy as np
 
-
 def main():
     st.title("Image Coordinate Picker")
     uploaded_file = st.file_uploader("Choose an image...", type=['jpg', 'png', 'jpeg'])
