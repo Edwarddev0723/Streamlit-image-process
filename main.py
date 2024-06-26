@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 
 def main():
-    st.title("Image Coordinate Picker")
-    uploaded_file = st.file_uploader("Choose an image...", type=['jpg', 'png', 'jpeg'])
+    st.title("選取廣告位置")
+    uploaded_file = st.file_uploader("上傳要插入廣告之照片...", type=['jpg', 'png', 'jpeg'])
 
     if uploaded_file is not None:
         file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
